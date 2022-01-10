@@ -1,0 +1,24 @@
+
+:host{
+    display: block;
+    /*border: 10px solid greenyellow;*/
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 300px));
+    gap: 10px;
+    justify-content: center;
+    /*background-color: red;*/
+}
+.my-card-title, .my-card-location{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Responsive design for mobiles */
+@media screen and (max-width: 480px){
+:host{
+    border: 10px solid rgb(47, 102, 255);
+    grid-template-columns: repeat(auto-fill, 400px);
+}
+}

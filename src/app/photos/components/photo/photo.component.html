@@ -1,0 +1,25 @@
+<div class="garden-card">
+
+    <a [routerLink]= "['/previews', photo.id]" class="photo-garden-link">
+        <div class="garden-card-header">
+            <p><strong>{{photo.title}}</strong></p>
+            <p><small>{{photo.location}}</small></p>
+        </div>
+    
+        <img [src]="photo.square_size" alt="Nature photo" class="square-photo" width="300px">
+
+        <div class="garden-card-description">
+            <p class="description">
+                {{photo.description | slice:0:33}}
+            </p>
+        </div>
+
+    </a>      
+<div>
+
+      
+      
+    
+   
+
+  

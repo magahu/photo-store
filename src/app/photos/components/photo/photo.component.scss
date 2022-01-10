@@ -1,0 +1,46 @@
+:host{
+    display: block;
+}
+.garden-card-header p{
+    margin: 0;
+    color: #ffffff;
+    font-size: inherit;
+}
+.square-photo{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.description::after{
+    content: "...";
+}
+.description{
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+}
+.garden-card-description{
+    margin: 3px 15px;
+}
+.garden-card{
+    background-color: #475c5b;
+    /* #4c674c; */
+    border-radius: 5px;
+}
+.garden-card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+}
+.photo-garden-link{
+text-decoration: none;
+}
+
+/* Responsive design for tablets */
+@media screen and (max-width: 768px){
+.description{
+    padding: 0.5em;
+    font-size: small;
+}
+}

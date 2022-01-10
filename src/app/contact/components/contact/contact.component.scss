@@ -1,0 +1,58 @@
+.container{
+    display: grid;
+    grid-template: repeat(autofill, 1fr) / repeat(autofill, 1fr);
+    grid-template-areas: "message message message message message"
+                         "portrait info info contact contact"
+                         "portrait info info contact contact"
+                         "portrait info info contact contact"
+                         "portrait info info media media"
+                         "portrait info info media media";
+    border-radius: 5px;
+}
+.message{
+    grid-area: message;
+    text-align: center;
+}
+.portrait{
+    grid-area: portrait;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.img{
+    width: 100%;
+}
+.info{
+    grid-area: info;
+    padding: 1em;
+}
+.contact{
+    grid-area: contact;
+    background-color: indigo;
+    text-align: center;
+}
+.social-media{
+    grid-area: media;
+    background-color: lightseagreen; 
+    text-align: center;
+}
+
+.media-icon{
+    color: blue;
+    font-size: 3em;
+    text-decoration: none;
+    margin: 0.3em;
+}
+
+/* Responsive design for tablets */
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-areas: "message message"
+                             "portrait info"
+                             "portrait info"
+                             "portrait info"
+                             "contact contact"
+                             "media media";
+    }
+}

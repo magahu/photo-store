@@ -1,0 +1,38 @@
+<div class="card-container">
+
+    <div class="empty"></div>
+
+    <div class="detail-card">
+        
+        <figure class="image-container">
+            <img [src]="photo.full_size" width="400px" class="image">
+        </figure>
+        
+        <div class="image-header">
+            <p class="image-title">{{photo.title}}</p>
+            <p class="image-location">{{photo.location}}</p>
+        </div>
+        
+        <div class="image-description">
+            <p>{{photo.description}}</p>
+        </div>
+        
+
+        <div class="image-actions">
+            <mat-icon>favorite</mat-icon>
+            <mat-icon>favorite_border</mat-icon>
+        </div>
+
+        <button mat-raised-button color="warn">Agregar al carrito</button>
+    
+    </div>
+
+    <div class="empty"></div>
+    
+</div>
+
+
+    
+
+    
+

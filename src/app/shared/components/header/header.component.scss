@@ -1,0 +1,87 @@
+.mat-toolbar.mat-primary {
+    background-color: #296572;
+}
+nav > a{
+    text-decoration: none;
+}
+nav > a.active{
+    background-color: #56ec1a;
+    color: #000000;
+}
+.navbar{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr;
+    align-content: center;
+    justify-content: center;
+    gap: 2%;
+    padding: 0.5em;
+}
+.logo-text{
+    color: #ffffff;
+    font-family: 'Rye', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 5px;
+}
+.header-button{
+    display: none;
+}
+.header-icon{
+    display: none;
+}
+.icon-style{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+/* Tablets y móviles*/
+@media screen and (max-width:768px){
+    .shopping-text{
+        display: none;
+    }
+    .header-button{
+        display: block;
+    }
+    .header-icon{
+        display: block;
+    }
+    .link-text{
+        display: none;
+    }
+    .header-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        grid-template: repeat(2, 1fr) / repeat(5, minmax(50px, 1fr));
+        grid-template-areas: "l l l l l"
+                              "i h g c s";
+    }
+    .logo-container{
+        grid-area: l;
+    }
+    .i{
+        grid-area: i;
+    }
+    .h{
+        grid-area: h;
+    }
+    .g{
+        grid-area: g;
+    }
+    .c{
+        grid-area: c;
+    }
+    .s{
+        grid-area: s;
+    }
+    .mat-toolbar-row{
+        height: auto;
+    }
+
+}
+
+

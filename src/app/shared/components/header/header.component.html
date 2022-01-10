@@ -1,0 +1,43 @@
+<!--FONTS-->
+<link href="https://fonts.googleapis.com/css2?family=Life+Savers&family=Open+Sans&family=Rye&display=swap" rel="stylesheet"> 
+<!--
+    font-family: 'Life Savers', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rye', cursive;
+-->
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+
+            <nav class="navbar">
+                <a mat-button routerLink="/home" class="logo-container l">
+                    <img [src]="daisyFlower" width="35px" class="logo-img">
+                    <span class="logo-text">Jardín digital</span>
+                </a>
+                <a mat-button class="i header-button header-link" target="_blank"
+                href="https://www.instagram.com/m_gahu/?hl=es-la">
+                    <span class="icon-instagram icon-style header-icon"></span>
+                </a>
+                <a mat-button routerLink="/home" routerLinkActive="active" class="h header-link">
+                    <span class="link-text">Home</span>
+                    <mat-icon class="header-icon">home</mat-icon>
+                </a>
+                <a mat-button routerLink="/previews" routerLinkActive="active" class="g header-link">
+                    <span class="link-text">Galería</span>
+                    <mat-icon class="header-icon">collections</mat-icon>
+                </a>
+                <a mat-button routerLink="/contact" routerLinkActive="active" class="c header-link">
+                    <span class="link-text">Contacto</span>
+                    <mat-icon class="header-icon">camera_alt</mat-icon>
+                </a>
+                <button mat-flat-button matBadge="15" class="s header-link"
+                    matBadgeColor="warn"
+                    class="shopping-button">
+                    <mat-icon>shopping_cart</mat-icon>
+                    <span class="shopping-text">Carrito</span>
+                </button>
+                
+            </nav>
+            
+    </mat-toolbar-row>
+</mat-toolbar>
